@@ -1,4 +1,4 @@
-
+# Automated Config
 config.load_autoconfig(False)
 
 
@@ -8,7 +8,6 @@ config.set('content.cookies.accept', 'all', 'devtools://*')
 
 config.set('content.headers.accept_language', '', 'https://matchmaker.krunker.io/*')
 
-# Automated Config
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}', 'https://web.whatsapp.com/')
 
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:90.0) Gecko/20100101 Firefox/90.0', 'https://accounts.google.com/*')
@@ -50,20 +49,39 @@ config.set('completion.height', '25%')
 c.fonts.tabs.selected='12px default_family'
 
 # colors
+purple='#9D7CD8'
+cyan='#7DCFFF'
+teal='#1ABC9C'
+yellow='#E0AF68'
+red='#F7778E'
+dark='#1F2335'
+
 ## Tabs
-c.colors.tabs.selected.even.bg='#9D7CD8'
-c.colors.tabs.selected.odd.bg='#9D7CD8'
-c.colors.tabs.bar.bg='#1F2335'
-c.colors.tabs.even.bg='#1F2335'
-c.colors.tabs.odd.bg='#1A1B26'
+c.colors.tabs.selected.even.bg=purple
+c.colors.tabs.selected.odd.bg=purple
+c.colors.tabs.bar.bg=dark
+c.colors.tabs.even.bg=dark
+c.colors.tabs.odd.bg=dark
 ## Completion
-c.colors.completion.odd.bg='#1F2335'
-c.colors.completion.even.bg='#1A1B26'
-c.colors.completion.category.bg='#BB9AF7'
-c.colors.completion.match.fg='#BB9AF7' 
-c.colors.completion.item.selected.bg='#BB9AF7'
-c.colors.completion.item.selected.fg='#1F2335'
-c.colors.completion.item.selected.match.fg='#fff'
-c.colors.completion.scrollbar.bg='#1F2335'
-c.colors.completion.scrollbar.fg='#BB9AF7'
+c.colors.completion.odd.bg=dark
+c.colors.completion.even.bg=dark
+c.colors.completion.category.bg=purple
+c.colors.completion.match.fg=purple
+c.colors.completion.item.selected.bg=purple
+c.colors.completion.item.selected.fg=dark
+c.colors.completion.item.selected.match.fg='white'
+c.colors.completion.scrollbar.bg=dark
+c.colors.completion.scrollbar.fg=purple
+## Statusbar
+c.colors.statusbar.normal.bg=dark
+c.colors.statusbar.normal.fg=purple
+c.colors.statusbar.command.bg=dark
+c.colors.statusbar.command.fg=purple
+c.colors.statusbar.progress.bg=purple
+c.colors.statusbar.url.error.fg=red
+c.colors.statusbar.url.fg=purple
+c.colors.statusbar.url.hover.fg=cyan
+c.colors.statusbar.url.success.http.fg=teal
+c.colors.statusbar.url.success.https.fg=teal
+c.colors.statusbar.url.warn.fg=yellow
 
