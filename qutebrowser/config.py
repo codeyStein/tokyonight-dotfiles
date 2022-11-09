@@ -32,6 +32,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 config.set('window.hide_decoration', True)
 
 
+## Keybinds
 config.bind('xb', 'config-cycle statusbar.show always never')
 config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
@@ -39,9 +40,15 @@ config.bind('tyt', ':open -t https://youtube.com')
 config.bind('ts', ':open -t https://start.duckduckgo.com')
 config.bind('tg', ':open -t https://github.com')
 
+## Tabs
+c.tabs.padding={"bottom": 5, "left": 10, "right": 10, "top": 5}
+c.tabs.favicons.scale=1.5
+
+## Completion
 config.set('completion.height', '25%')
 
 c.fonts.tabs.selected='12px default_family'
+
 # colors
 ## Tabs
 c.colors.tabs.selected.even.bg='#9D7CD8'
